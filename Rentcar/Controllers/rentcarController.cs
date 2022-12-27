@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Rentcar.data;
 using Rentcar.Models;
 
 namespace Rentcar.Controllers
 {
+    [Authorize]
 	public class rentcarController : Controller
 
 	{
